@@ -21,7 +21,7 @@ import org.testng.annotations.BeforeSuite;
 public class baseClass {
 
 	public static WebDriver driver;
-	
+	//changes by aboli 
 	public static String emailId=  generateRandomEmailId(); 
 	public Properties prop;;
 

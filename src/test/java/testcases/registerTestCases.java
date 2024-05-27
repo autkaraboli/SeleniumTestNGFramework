@@ -12,7 +12,7 @@ import Resources.commonMethods;
 
 public class registerTestCases extends baseClass {
 
-	
+	//changes by aboli 
 	//valid data
 	
 	@Test(priority=1)

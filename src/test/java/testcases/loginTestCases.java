@@ -3,11 +3,11 @@ package testcases;
 import java.io.IOException;
 
 import org.testng.annotations.Test;
-import org.testng.asserts.SoftAssert;
-
 import PageObjectModel.HomePageObject;
 import PageObjectModel.LoginPageObject;
+import Resources.TestData;
 import Resources.baseClass;
+import Resources.commonMethods;
 
 public class loginTestCases extends baseClass {
 
@@ -16,7 +16,8 @@ public class loginTestCases extends baseClass {
 		
 		HomePageObject hpo = new HomePageObject(driver);
 		
-		Thread.sleep(3000);
+                                      //driver  sec  element
+		commonMethods.handleExplictWait(driver, 2, hpo.clickOnmyaccount());
 		
 		hpo.clickOnmyaccount();
 		hpo.clickOnLogin();
@@ -31,25 +32,22 @@ public class loginTestCases extends baseClass {
 		
 		
 	
-		/*String expected= "My Account ";     // Requirement document 
-		String Actual = lpo.getLoginSuccessfulText().getText();    //after running the script
+		String expected= TestData.loginExpectedText;     // Requirement document 
+		String actual = lpo.getLoginSuccessfulText().getText();    //after running the script
+	
 		
-		SoftAssert sa= new SoftAssert();
-		
-		sa.assertEquals(Actual, expected, "your text is not matching");
-
-        sa.assertAll();*/
-		
+        commonMethods.handleAssertion(actual, expected);
 	}
 		
 	
-	@Test(enabled = false)
+	@Test
 	public void verifyLoginwithInValidData() throws InterruptedException, IOException {
 		
 		
 		HomePageObject hpo = new HomePageObject(driver);
+	
 		
-		Thread.sleep(3000);
+		commonMethods.handleExplictWait(driver, 1, hpo.clickOnmyaccount());
 		
 		hpo.clickOnmyaccount();
 		hpo.clickOnLogin();
@@ -64,14 +62,9 @@ public class loginTestCases extends baseClass {
 		
 		
 	
-		/*String expected= "Waring: No match  for Email Address and/or Password ";     // Requirement document 
-		String Actual = lpo.LoginFailedText().getText();    //after running the script
-		
-		SoftAssert sa= new SoftAssert();
-		
-		sa.assertEquals(Actual, expected, "please enter proper cred.");
-
-        sa.assertAll();*/
-		
+		String expected= TestData.loginErrorTextExpected;     // Requirement document 
+		String actual = lpo.LoginFailedText().getText();    //after running the script
+	
+		  commonMethods.handleAssertion(actual, expected);
 	}
 }

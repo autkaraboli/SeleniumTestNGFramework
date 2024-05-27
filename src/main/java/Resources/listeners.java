@@ -24,7 +24,7 @@ public class listeners extends extentReportManager implements ITestListener  {
 		
 		 public void onTestSkip(ITestResult result) {
 			 if (result.getStatus() == ITestResult.SKIP) {
-				   test.log(Status.SKIP, "Test case skipped is" + result.getName());
+				   test.log(Status.SKIP , "Test case skipped is" + result.getName());
 				  }
 		 }
 		 
@@ -32,7 +32,7 @@ public class listeners extends extentReportManager implements ITestListener  {
 		 public void onTestFailure(ITestResult result) {
 			  if (result.getStatus() == ITestResult.FAILURE) {
 		    	test.log(Status.FAIL, "Test CASE Failed is " + result.getName()); 
-			   test.log(Status.FAIL, "Test CASE Failed is " + result.getThrowable()); //To throw excpetion
+			   test.log(Status.FAIL, "Test CASE Failed is " + result.getThrowable()); //To throw excpetion error
 
 			   
 			   /// this code is for taking th path of nstore screenshot and attch to report

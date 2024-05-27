@@ -1,39 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="2" total="3" passed="0" failed="1" skipped="0">
+<testng-results ignored="1" total="3" passed="1" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-05-17T17:20:28 IST" name="Default suite" finished-at="2024-05-17T17:20:40 IST" duration-ms="12627">
+  <suite started-at="2024-05-22T17:06:32 IST" name="Default suite" finished-at="2024-05-22T17:06:49 IST" duration-ms="16932">
     <groups>
     </groups>
-    <test started-at="2024-05-17T17:20:28 IST" name="Default test" finished-at="2024-05-17T17:20:40 IST" duration-ms="12627">
+    <test started-at="2024-05-22T17:06:32 IST" name="Default test" finished-at="2024-05-22T17:06:49 IST" duration-ms="16932">
       <class name="testcases.registerTestCases">
-        <test-method is-config="true" signature="browserAndurlLaunch()[pri:0, instance:testcases.registerTestCases@1ab3a8c8]" started-at="2024-05-17T17:20:28 IST" name="browserAndurlLaunch" finished-at="2024-05-17T17:20:35 IST" duration-ms="6876" status="PASS">
+        <test-method is-config="true" signature="ExtentReport()[pri:0, instance:testcases.registerTestCases@6d763516]" started-at="2024-05-22T17:06:32 IST" name="ExtentReport" finished-at="2024-05-22T17:06:32 IST" duration-ms="482" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ExtentReport -->
+        <test-method is-config="true" signature="browserAndurlLaunch()[pri:0, instance:testcases.registerTestCases@6d763516]" started-at="2024-05-22T17:06:32 IST" name="browserAndurlLaunch" finished-at="2024-05-22T17:06:38 IST" duration-ms="5957" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserAndurlLaunch -->
-        <test-method signature="verifyRegistrationWithblankdata()[pri:0, instance:testcases.registerTestCases@1ab3a8c8]" started-at="2024-05-17T17:20:35 IST" name="verifyRegistrationWithblankdata" finished-at="2024-05-17T17:20:40 IST" duration-ms="5660" status="FAIL">
+        <test-method signature="verifyRegistrationWithValiddata()[pri:1, instance:testcases.registerTestCases@6d763516]" started-at="2024-05-22T17:06:38 IST" name="verifyRegistrationWithValiddata" finished-at="2024-05-22T17:06:42 IST" duration-ms="3685" status="FAIL">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//div[text()='First Name must be between 1 and 32 characters!']"}
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//h1[text()='Your Account Has Been Created']"}
   (Session info: chrome=124.0.6367.208)
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: '4.19.1', revision: 'abe0ee07dc'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [cc253ea968e49160c446efe87b954fd4, findElement {using=xpath, value=//div[text()='First Name must be between 1 and 32 characters!']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.208, chrome: {chromedriverVersion: 124.0.6367.207 (a9001a6e39f..., userDataDir: C:\Users\TEST\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51742}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51742/devtoo..., se:cdpVersion: 124.0.6367.208, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: cc253ea968e49160c446efe87b954fd4]]>
+Command: [09b30390b1b021b59e34ddcc51e09cf0, findElement {using=xpath, value=//h1[text()='Your Account Has Been Created']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.208, chrome: {chromedriverVersion: 124.0.6367.207 (a9001a6e39f..., userDataDir: C:\Users\TEST\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63336}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63336/devtoo..., se:cdpVersion: 124.0.6367.208, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 09b30390b1b021b59e34ddcc51e09cf0]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[text()='First Name must be between 1 and 32 characters!']"}
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//h1[text()='Your Account Has Been Created']"}
   (Session info: chrome=124.0.6367.208)
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: '4.19.1', revision: 'abe0ee07dc'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [cc253ea968e49160c446efe87b954fd4, findElement {using=xpath, value=//div[text()='First Name must be between 1 and 32 characters!']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.208, chrome: {chromedriverVersion: 124.0.6367.207 (a9001a6e39f..., userDataDir: C:\Users\TEST\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51742}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51742/devtoo..., se:cdpVersion: 124.0.6367.208, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: cc253ea968e49160c446efe87b954fd4
+Command: [09b30390b1b021b59e34ddcc51e09cf0, findElement {using=xpath, value=//h1[text()='Your Account Has Been Created']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.208, chrome: {chromedriverVersion: 124.0.6367.207 (a9001a6e39f..., userDataDir: C:\Users\TEST\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63336}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63336/devtoo..., se:cdpVersion: 124.0.6367.208, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 09b30390b1b021b59e34ddcc51e09cf0
 at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
 at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
 at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
@@ -48,8 +52,8 @@ at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(Elemen
 at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
-at PageObjectModel.RegisterPageObject.FirstnameError(RegisterPageObject.java:105)
-at testcases.registerTestCases.verifyRegistrationWithblankdata(registerTestCases.java:88)
+at PageObjectModel.RegisterPageObject.getregistrationsuccessfullytext(RegisterPageObject.java:71)
+at testcases.registerTestCases.verifyRegistrationWithValiddata(registerTestCases.java:46)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
@@ -81,7 +85,19 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
+        </test-method> <!-- verifyRegistrationWithValiddata -->
+        <test-method is-config="true" signature="browserAndurlLaunch()[pri:0, instance:testcases.registerTestCases@6d763516]" started-at="2024-05-22T17:06:42 IST" name="browserAndurlLaunch" finished-at="2024-05-22T17:06:47 IST" duration-ms="5348" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserAndurlLaunch -->
+        <test-method signature="verifyRegistrationWithblankdata()[pri:2, instance:testcases.registerTestCases@6d763516]" started-at="2024-05-22T17:06:47 IST" name="verifyRegistrationWithblankdata" finished-at="2024-05-22T17:06:49 IST" duration-ms="1880" status="PASS">
+          <reporter-output>
+          </reporter-output>
         </test-method> <!-- verifyRegistrationWithblankdata -->
+        <test-method is-config="true" signature="endReport()[pri:0, instance:testcases.registerTestCases@6d763516]" started-at="2024-05-22T17:06:49 IST" name="endReport" finished-at="2024-05-22T17:06:50 IST" duration-ms="547" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endReport -->
       </class> <!-- testcases.registerTestCases -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->

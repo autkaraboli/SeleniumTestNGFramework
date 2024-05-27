@@ -5,7 +5,9 @@
     <classes>
       <class name="testcases.registerTestCases">
         <methods>
-          <include name="verifyRegistrationWithblankdata"/>
+          <include name="ExtentReport"/>
+          <include name="verifyRegistrationWithValiddata"/>
+          <include name="endReport"/>
           <include name="browserAndurlLaunch"/>
         </methods>
       </class> <!-- testcases.registerTestCases -->

@@ -9,7 +9,7 @@ public class LoginPageObject {
 	public WebDriver driver;
 
 	private By EnterEMailAddress = By.xpath("//input[@id='input-email']");
-	private By Password = By.xpath("//input[@name='password']");
+	private By Password = By.xpath("(//input[@class='form-control'])[2]");
 	private By Login = By.xpath("//input[@type='submit']");
 
 	private By LoginSuccessfulText = By.xpath("//h2[text()='My Account']");

@@ -4,6 +4,8 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
+import Resources.TestData;
+
 public class RegisterPageObject {
 
 	
@@ -20,7 +22,9 @@ public class RegisterPageObject {
 	private By Enteragree = By.xpath("//input[@name='agree']");
 	private By EnterContinue = By.xpath("//input[@value='Continue']");
 
-	private By RegistrationSuccessfully = By.xpath("//h1[text()= 'Your Account Has Been Created!']");
+	//private By RegistrationSuccessfully = By.xpath("//h1[text()='Your Account Has Been Created']");
+
+	private By RegistrationSuccessfully = By.xpath(TestData.regisgterationSuccessExpected);
 
 	public WebElement EnterFirstName() {
 		// driver.findElement()by.xpath " ")
@@ -85,8 +89,8 @@ public class RegisterPageObject {
 	// blank data
 	public WebDriver driver11;
 
-	//private By FirstnameError = By.xpath("(//div[@class='text-danger'])[1]");
-	private By FirstnameError = By.xpath("//div[text()='First Name must be between 1 and 32 characters!']");
+	private By FirstnameError = By.xpath("(//div[@class='text-danger'])[1]");
+	
 	private By LastNameError = By.xpath("(//div[@class='text-danger'])[2]");
 	private By EMailError = By.xpath("(//div[@class='text-danger'])[3]");
 	private By TelephoneError = By.xpath("(//div[@class='text-danger'])[4]");

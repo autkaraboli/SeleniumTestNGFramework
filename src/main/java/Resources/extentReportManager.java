@@ -1,5 +1,9 @@
 package Resources;
 
+import com.aventstack.extentreports.ExtentReports;
+import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.reporter.ExtentSparkReporter;
+import com.aventstack.extentreports.reporter.configuration.Theme;
 
 public class extentReportManager {
 	
@@ -10,7 +14,7 @@ public class extentReportManager {
 	
 	public static void setup() {
 
-		htmlReporter = new ExtentSparkReporter(System.getProperty("user.dir") + "/test-output/myReport.html");
+		htmlReporter = new ExtentSparkReporter(System.getProperty("user.dir") + "/test-output/myReport.html");  //report location
 		htmlReporter.config().setDocumentTitle("Automation Report");
 		htmlReporter.config().setReportName("Functional Report");
 		htmlReporter.config().setTheme(Theme.DARK);
